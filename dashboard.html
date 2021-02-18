@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<title>Dashboard for trading</title>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<link rel="stylesheet" href = "styles/style.css">
+<body>
+    <h1 class="header"> Welcome to Trading Dashboard</h1>
+
+    <div class="content">
+        <div>
+            <div class="select" style="float: left" >
+                <label for="stock_type"></label>
+                <select name="stocks" id="stock_type" onchange="stockChange()">
+                    <option value="choose">Please choose one</option>
+                </select>
+            </div>
+            <div style="margin-bottom: 20px; float: right">
+                <button id = "buy" type="button" onclick="alert('Hello world!')">Buy</button>
+                <button id = "sell" type="button" onclick="alert('Hello world!')">Sell</button>
+            </div>
+        </div>
+    </div>
+    <div id="chartContainer"></div>
+</body>
+<script type="text/javascript" src="scripts/sock.js"></script>
+<script type="text/javascript" src="scripts/stomp.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</html>
